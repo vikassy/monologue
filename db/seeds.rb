@@ -1,1 +1,1 @@
-Monologue::User.create!({:name => "Monologue", :email => "monologue@example.com", :password => "monologue", :password_confirmation => "monologue"})
+Monologue::User.create!({:name => "Admin", :email => "admin@example.com", :password => "password", :password_confirmation => "password"})

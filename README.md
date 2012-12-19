@@ -60,14 +60,16 @@ Run these commands:
 ### 4. Create a user
 Open your development console with `rails c`, then:
 ```ruby
-Monologue::User.create(name: "monologue", email:"monologue@example.com", password:"my-password", password_confirmation: "my-password")
+Monologue::User.create(name: "Admin", email:"admin@example.com", password:"password", password_confirmation: "password")
 ```
+or run
+$`bundle exec rake db:seeds` 
 
 ### 5. Configure Monologue.
 This is all done in an initializer file, say `config/initializers/monologue.rb`. More on this in the [Wiki - Configuration](https://github.com/jipiboily/monologue/wiki/Configuration).
 
 ### 6. Ready
-Start your server and head on [http://localhost:3000/monologue](http://localhost:3000/monologue) to log in the admin section.
+Start your server and head on [http://localhost:3000/admin](http://localhost:3000/admin) to log in the admin section.
 
 ### Note to Heroku users
 Additionnal step: turn caching off in `config/environments/production.rb`:
