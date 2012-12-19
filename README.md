@@ -62,8 +62,6 @@ Open your development console with `rails c`, then:
 ```ruby
 Monologue::User.create(name: "Admin", email:"admin@example.com", password:"password", password_confirmation: "password")
 ```
-or run
-$`bundle exec rake db:seeds` 
 
 ### 5. Configure Monologue.
 This is all done in an initializer file, say `config/initializers/monologue.rb`. More on this in the [Wiki - Configuration](https://github.com/jipiboily/monologue/wiki/Configuration).
