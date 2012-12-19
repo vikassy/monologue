@@ -3,7 +3,7 @@
   <%= render :partial => 'monologue/posts/revision_header', :locals => {:revision=>revision} %>
 
   <div class="content" data-monologue="content">
-    <%= truncate_html(revision.content, :length => 1000, :omission => '...') %>
+    <%= revision.summary %>
   </div>
 
   <div class="tags" data-monologue="tags">

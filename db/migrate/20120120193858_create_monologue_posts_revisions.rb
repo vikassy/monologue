@@ -2,6 +2,7 @@ class CreateMonologuePostsRevisions < ActiveRecord::Migration
   def change
     create_table :monologue_posts_revisions do |t|
       t.string :title
+      t.text :summary
       t.text :content
       t.string :url
       t.integer :user_id

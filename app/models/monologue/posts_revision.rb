@@ -1,5 +1,5 @@
 class Monologue::PostsRevision < ActiveRecord::Base
-  attr_accessible :title, :content, :url, :published_at
+  attr_accessible :title, :content, :url, :published_at , :summary
 
   before_validation :generate_url
 
@@ -10,6 +10,7 @@ class Monologue::PostsRevision < ActiveRecord::Base
   
   validates :title, :presence =>  true
   validates :content, :presence =>  true
+  validates :summary, :presence =>  true
   validates :url, :presence =>  true
   validate :url_do_not_start_with_slash
   validate :url_is_unique
